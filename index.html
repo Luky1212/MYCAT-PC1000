@@ -37,6 +37,7 @@
             height: auto;
             max-height: 500px;
             margin-bottom: 20px;
+            object-fit: cover;
         }
 
         .thumbnail-container {
@@ -46,7 +47,7 @@
         }
 
         .thumbnail-container img {
-            width: 18%;
+            width: 10%;
             height: auto;
             cursor: pointer;
             border: 2px solid #ddd;
@@ -60,7 +61,25 @@
         #description {
             font-size: 1.2em;
             color: #333;
+            margin-bottom: 20px;
         }
+
+        /* Styl tlačítka */
+        .contact-button {
+            background-color: #0044cc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .contact-button:hover {
+            background-color: #003399;
+        }
+
     </style>
 </head>
 <body>
@@ -84,7 +103,10 @@
         </div>
 
         <!-- Popis -->
-        <p id="description">Tento osobní počíta je vybaven grafickou kartou Nvidia QUADRO FX 3800, která zvládne procesovat hry až na 120 FPS. K monitoru ji lze připojit pomocí dvou Display portů i jednoho DVI portu. Procesorem tohoto počítače je intel core i5. Celý systém má pak k dispozici 16GB RAM což je dostačující na hry i náročnější programy. O ukládámí dat se zde starají 2 disky jeden SSD 500 GB na systém a jeden 1TB na média a hry.</p>
+        <p id="description">Tento osobní počítač je vybaven grafickou kartou Nvidia QUADRO FX 3800, která zvládne procesovat hry až na 120 FPS. K monitoru ji lze připojit pomocí dvou Display portů i jednoho DVI portu. Procesorem tohoto počítače je Intel Core i5. Celý systém má pak k dispozici 16GB RAM, což je dostačující na hry i náročnější programy. O ukládání dat se starají dva disky - SSD 500 GB na systém a HDD 1TB na média a hry.</p>
+
+        <!-- Tlačítko pro kontakt -->
+        <a href="mailto:info@mycat-shop.com" class="contact-button">Kontaktujte nás</a>
     </div>
 
     <script>
