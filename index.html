@@ -32,14 +32,15 @@
             text-align: center;
         }
 
+        /* Optimalizace hlavního obrázku */
         #main-image {
             width: 100%;
+            max-width: 100%;
             height: auto;
-            max-height: 500px;
             margin-bottom: 20px;
-            object-fit: cover;
         }
 
+        /* Miniatury jsou menší a přizpůsobí se stránce */
         .thumbnail-container {
             display: flex;
             justify-content: space-between;
@@ -47,7 +48,7 @@
         }
 
         .thumbnail-container img {
-            width: 10%;
+            width: 18%;
             height: auto;
             cursor: pointer;
             border: 2px solid #ddd;
