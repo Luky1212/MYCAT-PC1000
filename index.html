@@ -15,43 +15,44 @@
         header {
             background-color: #0044cc;
             color: white;
-            padding: 20px; /* Zvýšení paddingu záhlaví */
+            padding: 5px; /* Zmenšení paddingu záhlaví */
             text-align: left;
         }
 
         header a {
             color: white;
             text-decoration: none;
-            font-size: 2.5em; /* Výrazně větší záhlaví */
+            font-size: 1em; /* Zmenšení velikosti záhlaví */
             font-weight: bold;
         }
 
         .container {
-            width: 90%; /* Zvýšení šířky kontejneru */
-            margin: 40px auto; /* Větší mezery */
+            width: 90%;
+            margin: 10px auto; /* Zmenšení marginu */
             text-align: center;
         }
 
         /* Optimalizace hlavního obrázku */
         #main-image {
             width: 100%;
-            max-width: 800px; /* Výrazně větší max šířka hlavního obrázku */
+            max-width: 500px; /* Zmenšení max šířky hlavního obrázku */
             height: auto;
-            margin-bottom: 40px; /* Větší spodní mezera */
+            margin-bottom: 10px; /* Zmenšení mezery */
         }
 
-        /* Miniatury jsou mnohem větší a přizpůsobí se stránce */
+        /* Miniatury jsou menší a přizpůsobí se stránce */
         .thumbnail-container {
             display: flex;
-            justify-content: space-between;
-            margin-bottom: 40px; /* Zvýšená mezera mezi miniaturami */
+            justify-content: center;
+            gap: 5px; /* Zmenšení mezery mezi miniaturami */
+            margin-bottom: 10px; /* Zmenšení mezery mezi řádky */
         }
 
         .thumbnail-container img {
-            width: 160px; /* Výrazně větší miniatury */
+            width: 60px; /* Zmenšení šířky miniatur */
             height: auto;
             cursor: pointer;
-            border: 3px solid #ddd; /* Tlustší rámeček kolem miniatur */
+            border: 1px solid #ddd; /* Zmenšení tloušťky okraje */
             transition: border 0.3s;
         }
 
@@ -60,25 +61,36 @@
         }
 
         #description {
-            font-size: 1.8em; /* Výrazně zvětšený popis */
+            font-size: 0.9em; /* Zmenšení velikosti textu */
             color: #333;
-            margin-bottom: 30px;
+            margin-bottom: 10px; /* Zmenšení mezery pod popisem */
         }
 
         /* Styl tlačítka */
         .contact-button {
             background-color: #0044cc;
             color: white;
-            padding: 20px 40px; /* Výrazně větší tlačítko */
+            padding: 5px 10px; /* Zmenšení paddingu tlačítka */
             border: none;
-            border-radius: 8px;
-            font-size: 1.5em; /* Výrazně zvětšený text tlačítka */
+            border-radius: 5px;
+            font-size: 0.9em; /* Zmenšení velikosti textu tlačítka */
             cursor: pointer;
             text-decoration: none;
         }
 
         .contact-button:hover {
             background-color: #003399;
+        }
+
+        /* Responsivita pro menší obrazovky */
+        @media (max-width: 768px) {
+            .thumbnail-container {
+                flex-wrap: wrap;
+            }
+
+            .thumbnail-container img {
+                width: 50px; /* Zmenšení miniatur na menších zařízeních */
+            }
         }
 
     </style>
